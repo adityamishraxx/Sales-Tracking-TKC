@@ -10,7 +10,7 @@ import toast from 'react-hot-toast'
 import {
   BarChart, Bar, PieChart, Pie, Cell, LineChart, Line,
   XAxis, YAxis, CartesianGrid, Tooltip, Legend,
-  ResponsiveContainer, FunnelChart, Funnel, LabelList,
+  ResponsiveContainer,
 } from 'recharts'
 import {
   LayoutDashboard, Download, RefreshCw, TrendingUp,
