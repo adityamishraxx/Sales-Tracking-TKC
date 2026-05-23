@@ -10,7 +10,7 @@ import LoadingSpinner, { InlineLoader } from '@/components/ui/LoadingSpinner'
 import toast from 'react-hot-toast'
 import {
   Upload, ArrowLeft, FileText, Image, Check,
-  ExternalLink, AlertCircle, X, CloudUpload
+  ExternalLink, AlertCircle, X, UploadCloud
 } from 'lucide-react'
 
 const FILE_ICONS = {
@@ -204,7 +204,7 @@ export default function POUpload() {
                             }`}
               >
                 <div className="w-14 h-14 rounded-xl bg-surface-600/60 flex items-center justify-center">
-                  <CloudUpload size={26} className="text-slate-400" />
+                  <UploadCloud size={26} className="text-slate-400" />
                 </div>
                 <div className="text-center">
                   <p className="text-sm font-medium text-slate-200">Drop file here or click to browse</p>
