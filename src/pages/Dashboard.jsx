@@ -14,7 +14,7 @@ import {
 } from 'recharts'
 import {
   LayoutDashboard, Download, RefreshCw, TrendingUp,
-  Users, IndianRupee, Award, CheckCircle2, Activity,
+  Users, IndianRupee, Award, CircleCheckBig, Activity,
   Clock, AlertTriangle, Target, Calendar, ArrowLeft, Zap
 } from 'lucide-react'
 
@@ -289,7 +289,7 @@ export default function Dashboard() {
         <KPICard icon={IndianRupee}  label="Total Funnel Size"    value={`₹${a.totalSize.toFixed(1)} Cr`}      color="brand"  />
         <KPICard icon={Users}        label="Active Accounts"      value={a.totalCount}                          color="teal"   />
         <KPICard icon={Award}        label="Avg. Deal Size"       value={`₹${a.avgSize.toFixed(2)} Cr`}        color="purple" />
-        <KPICard icon={CheckCircle2} label="Closed Won"           value={`${a.closedWon} leads`}               color="green"  sub={`₹${a.closedSize.toFixed(1)} Cr`} />
+        <KPICard icon={CircleCheckBig} label="Closed Won"           value={`${a.closedWon} leads`}               color="green"  sub={`₹${a.closedSize.toFixed(1)} Cr`} />
         <KPICard icon={Zap}          label="Revenue Realised"     value={`₹${a.revSize.toFixed(1)} Cr`}        color="amber"  sub={`${a.revRealised} accounts`} />
         <KPICard icon={AlertTriangle} label="Stale (>14 days)"    value={a.staleCount}                          color="red"    sub="Need attention" />
       </div>
@@ -477,7 +477,7 @@ export default function Dashboard() {
         >
           {a.staleLeads.length === 0 ? (
             <div className="flex flex-col items-center justify-center py-8 gap-2">
-              <CheckCircle2 size={32} className="text-green-400" />
+              <CircleCheckBig size={32} className="text-green-400" />
               <p className="text-sm text-green-400 font-medium">All leads are up to date!</p>
               <p className="text-xs text-slate-500">No leads older than 14 days.</p>
             </div>
